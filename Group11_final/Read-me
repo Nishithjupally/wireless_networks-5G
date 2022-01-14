@@ -1,0 +1,20 @@
+Read-me:
+Submitted files :
+1. pdcp-lte.cc
+2. pdcp-lte.h
+3. lte-rlc-am.cc
+4. exogenousdelay.cc
+5. exogenous.sh
+6. Group11-Final-Review.pptx
+
+Files 4 i.e. exogenousdelay.cc corresponds to simulating the problem statment.
+To run this : place this file(exogenousdelay.cc) in ns-3-dev/scratch and exogenous.sh in ns-3-dev/.
+/ns-3-dev$ chmod +x exogenous.sh
+/ns-3-dev$ ./exogenous.sh
+Outputs corresponding to two different cases are produced on terminal. These are clearly explained in report.
+
+Now to run our implementation. Place files 1,2,3 in ns-3-dev/src/lte/model. Basically replace the exisitng files with new files provided.
+To run : ./waf --run "exogenousdelay.cc"
+This produces a output where only 1 packet is received. This explained in the report.
+
+Since our implementation is not complete, we cannot compare the improvement in effect on exogenous delay of URLLC traffic because of eMBB.
